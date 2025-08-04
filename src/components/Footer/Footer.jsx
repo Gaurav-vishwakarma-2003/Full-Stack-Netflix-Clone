@@ -9,17 +9,17 @@ function Footer() {
   return (
     <div className='footer'>
       <div className="footer-icons">
-        <img src={youtube_icon} alt="" />
-        <img src={twitter_icon} alt="" />
-        <img src={instagram_icon} alt="" />
-        <img src={facebook_icon} alt="" />
+        <img src={youtube_icon} alt="y_icon" />
+        <img src={twitter_icon} alt="t_icon" />
+        <img src={instagram_icon} alt="i_icon" />
+        <img src={facebook_icon} alt="f_icon" />
       </div>
       <ul>
         <li>Audio Description</li>
         <li>Help Center</li>
         <li>Gift Cards</li>
         <li>Media Center</li>
-        <li>Invesotr Relations</li>
+        <li>Investor Relations</li>
         <li>Jobs</li>
         <li>Terms of Use</li>
         <li>Privacy</li>
