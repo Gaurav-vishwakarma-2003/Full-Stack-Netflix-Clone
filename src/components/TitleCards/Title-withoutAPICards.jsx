@@ -6,20 +6,7 @@ import cards_data from '../../assets/cards/Cards_data'
 
 const TitleCards=({title, category}) =>  {
 
-    
-
   const cardsRef = useRef();
-
-//  TMDB API
-  const options = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZDNkNzk1YzMyZGFkYjMxNmMzYjBlN2Q3NDE2OTQ3YyIsIm5iZiI6MTc1NDk4OTkxNy4wMDMsInN1YiI6IjY4OWIwNTVjN2U0MzUxNDEwZmI3MDc4NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nVMiz80NG0TvDtn9oFOQz1IsVowRB_xrmdRG8DWHf4g'
-  }
-};
-
-
 
 const handleWheel = (event) => {
   event.preventDefault;
@@ -27,12 +14,6 @@ const handleWheel = (event) => {
 }
 
 useEffect(()=>{
-
-    fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', options)
-  .then(res => res.json())
-  .then(res => console.log(res))
-  .catch(err => console.error(err));  //END
-
   cardsRef.current.addEventListener('wheel', handleWheel)
 },[])
 
