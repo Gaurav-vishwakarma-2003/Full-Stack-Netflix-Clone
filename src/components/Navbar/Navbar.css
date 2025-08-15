@@ -67,3 +67,6 @@
 .navbar-profile:hover .dropdown{
     display:block;
 }
+.nav-dark{
+    background-color: rgba(39, 37, 37, 0.75);
+}
