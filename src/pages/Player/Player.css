@@ -22,3 +22,14 @@
     width: 90%;
     margin-top: 10px;
 }
+
+@media (max-width: 500px) {
+    .player-info{
+        display: flex;
+        /* grid-template-columns: auto auto; */
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+     
+}

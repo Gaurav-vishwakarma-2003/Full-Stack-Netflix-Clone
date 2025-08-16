@@ -1,5 +1,6 @@
 .login {
     height: 100%;
+    overflow: hidden;
     background-image: url(/background_banner.jpg);
     background-color: rgba(0, 0, 0, 0.75);
     background-size: cover;
@@ -83,4 +84,13 @@
     color: #fff;
     font-weight: 700;
     cursor: pointer;
+}
+@media (max-width: 500px) {
+    .login{
+        padding: 15px 5%;
+    }
+    .login-form{
+        padding: 20px;
+        margin-top: 30px;
+    }
 }
